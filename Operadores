@@ -1,0 +1,121 @@
+🧠 Operadores em Java
+
+No Java, temos diversos tipos de operadores para lidar com os dados que estamos trabalhando em nossa aplicação.
+A seguir, estão alguns dos principais tipos de operadores e como utilizá-los.
+
+⚙️ Operadores de Atribuição
+
+São usados para atribuir um valor a uma variável.
+O operador básico é o = (sinal de igual).
+
+int valor = 5; // Atribui o valor 5 à variável "valor"
+
+Também existem operadores de atribuição combinados, que são formas abreviadas de operações com atribuição.
+
+int valor = 10;
+valor += 15; // Equivalente a valor = valor + 15 → valor passa a ser 25
+
+➕ Operadores Aritméticos
+
+Usados para realizar operações matemáticas básicas.
+São eles:
+| Operador | Descrição        |
+| -------- | ---------------- |
+| `+`      | Adição           |
+| `-`      | Subtração        |
+| `*`      | Multiplicação    |
+| `/`      | Divisão          |
+| `%`      | Resto da divisão |
+
+Exemplo:
+int a = 10 + 5; // 15
+int b = 10 - 5; // 5
+int c = 10 * 5; // 50
+int d = 10 / 5; // 2
+int e = 10 % 3; // 1 (resto da divisão)
+
+🔍 Operadores Relacionais
+
+São usados para comparar valores.
+Eles retornam um valor booleano (true ou false).
+
+| Operador | Significado      |
+| -------- | ---------------- |
+| `==`     | Igual a          |
+| `!=`     | Diferente de     |
+| `>`      | Maior que        |
+| `>=`     | Maior ou igual a |
+| `<`      | Menor que        |
+| `<=`     | Menor ou igual a |
+
+Exemplo:
+int a = 10;
+int b = 5;
+int c = 30;
+
+boolean igual = (b == a);        // false
+boolean diferente = (b != c);    // true
+boolean maior = (b > a);         // false
+boolean menorIgual = (b <= c);   // true
+
+💡 Operadores lógicos:
+
+Esses operadores são usados quando queremos verificar duas ou mais condições e/ou expressões na aplicação. 
+Eles fazem a comparação de valores booleanos e retornam também um resultado booleano.
+
+São três operadores: AND (&&), OR (||) e NOT (!).
+
+O operador AND (&&), que traduzindo para o português seria o E, é usado para verificar se duas condições são verdadeiras. 
+Se ambas as condições forem verdadeiras, o resultado será verdadeiro. Caso contrário, o resultado será falso. 
+Aqui está um exemplo:
+
+boolean a = true;
+boolean b = false;
+if (a && b) {
+   // Este código não será executado, já que a é verdadeiro e b é falso.
+}
+
+O operador OR (||), que traduzindo para o português seria o OU, é usado para verificar se pelo menos uma das condições é verdadeira. 
+Se pelo menos uma das condições for verdadeira, o resultado será verdadeiro. Caso contrário, o resultado será falso. 
+Aqui está um exemplo:
+
+boolean a = true;
+boolean b = false;
+if (a || b) {
+   // Este código será executado, já que a é verdadeiro, mesmo que b seja falso.
+}
+
+O operador NOT (!) é usado para negar uma condição. 
+Se a condição for verdadeira, o resultado será falso. 
+Se a condição for falsa, o resultado será verdadeiro. 
+Aqui está um exemplo:
+
+boolean a = true;
+if (!a) {
+   // Este código não será executado, já que a é verdadeiro.
+}
+
+🔼 Operadores de Incremento
+
+Usados para aumentar o valor de uma variável em 1.
+Existem dois tipos:
+
+| Tipo           | Exemplo      | Descrição                             |
+| -------------- | ------------ | ------------------------------------- |
+| Pré-incremento | `++variavel` | Incrementa **antes** de usar o valor  |
+| Pós-incremento | `variavel++` | Incrementa **depois** de usar o valor |
+
+Pré-incremento:
+int num = 5;
+int resultado = ++num; // num vira 6 e depois é atribuído a resultado
+
+System.out.println(num);      // 6
+System.out.println(resultado); // 6
+
+Pós-incremento:
+int num = 5;
+int resultado = num++; // resultado recebe 5, depois num vira 6
+
+System.out.println(num);      // 6
+System.out.println(resultado); // 5
+
